@@ -1,0 +1,51 @@
+{
+  "name": "emmet-comments-react",
+  "displayName": "Emmet Comments React",
+  "description": "Insert className attribute in JSX files",
+  "version": "0.1.0",
+  "publisher": "LUIDevo",
+  "homepage": "https://github.com/LUIDevo/Emmet-Comments-in-React-VSC-extension-.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LUIDevo/Emmet-Comments-in-React-VSC-extension-.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vscode",
+    "extension",
+    "jsx",
+    "react",
+    "emmet",
+    "className"
+  ],
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.insertClassName"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+        "command": "extension.insertClassName",
+        "title": "Insert className attribute"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.87.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
